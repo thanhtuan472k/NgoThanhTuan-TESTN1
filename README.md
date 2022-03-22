@@ -83,24 +83,24 @@
     | NgayDuyet | datetime | Ngày duyệt đề nghị, nếu yêu cầu chưa được duyệt thì trường này sẽ là null|
     | GhiChu | string | Mô tả, ghi chú lý do|
 
-    - HoaDon
-      | Tên trường | Kiểu dữ liệu | Mô tả |
-      | :------------: | :----------: | :-----------------------------------------: |
-      | IDHoaDon | int | Khoá chính |
-      | NgayLapHoaDon | datetime | Ngày lập hoá đơn|
-      | TongTien | double | Tổng tiền mua sản phẩm từ công ty khác|
-      | IDCongTyCungCap | string | Khoá ngoại tham chiếu từ bảng CongTy, hoá đơn mua sản phẩm từ công ty nào|
+  - HoaDon
+    | Tên trường | Kiểu dữ liệu | Mô tả |
+    | :------------: | :----------: | :-----------------------------------------: |
+    | IDHoaDon | int | Khoá chính |
+    | NgayLapHoaDon | datetime | Ngày lập hoá đơn|
+    | TongTien | double | Tổng tiền mua sản phẩm từ công ty khác|
+    | IDCongTyCungCap | string | Khoá ngoại tham chiếu từ bảng CongTy, hoá đơn mua sản phẩm từ công ty nào|
 
-    - ChiTietHoaDon
-      | Tên trường | Kiểu dữ liệu | Mô tả |
-      | :------------: | :----------: | :-----------------------------------------: |
-      | IDHoaDon | int | Khoá ngoại tham chiếu từ bảng HoaDon |
-      | IDSanPham | int | Khoá ngoại tham chiếu từ bảng SanPham|
-      | SoLuong | int | Số lượng sản phẩm đã mua|
-      | Gia | double | Giá của sản phẩm đó|
+  - ChiTietHoaDon
+    | Tên trường | Kiểu dữ liệu | Mô tả |
+    | :------------: | :----------: | :-----------------------------------------: |
+    | IDHoaDon | int | Khoá ngoại tham chiếu từ bảng HoaDon |
+    | IDSanPham | int | Khoá ngoại tham chiếu từ bảng SanPham|
+    | SoLuong | int | Số lượng sản phẩm đã mua|
+    | Gia | double | Giá của sản phẩm đó|
 
-  - ERD Tiếng Việt
-    ![ERD_VI](https://res.cloudinary.com/du0zjoe91/image/upload/v1647936266/ERD_VI_komftv.png)
+- ERD Tiếng Việt
+  ![ERD_VI](https://res.cloudinary.com/du0zjoe91/image/upload/v1647936266/ERD_VI_komftv.png)
 
-  - ERD Tiếng Anh
-    ![ERD_EN](https://res.cloudinary.com/du0zjoe91/image/upload/v1647936278/ERD_EN_nt5ndr.png)
+- ERD Tiếng Anh
+  ![ERD_EN](https://res.cloudinary.com/du0zjoe91/image/upload/v1647936278/ERD_EN_nt5ndr.png)
