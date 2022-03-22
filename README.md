@@ -21,34 +21,34 @@
 
   - Bảng LoaiCongTy
     | Tên trường | Kiểu dữ liệu | Mô tả |
-    | :------------ | :----------: | -----------------------------------------: |
+    | :------------: | :----------: | :-----------------------------------------: |
     | IDLoaiCongTy | int | Khoá chính |
     | TenLoaiCongTy | string | Tên loại công ty, default(Merchant, Audit) |
 
   - Bảng CongTy
     | Tên trường | Kiểu dữ liệu | Mô tả |
-    | :------------ | :----------: | -----------------------------------------: |
+    | :------------: | :----------: | :-----------------------------------------: |
     | IDCongTy | int | Khoá chính |
     | TenCongTy | string | Tên loại công ty, default(Merchant, Audit) |
     | IDLoaiCongTy | int | Khoá ngoại tham chiếu từ bảng LoaiCongTy|
 
   - Bảng PhongBan
     | Tên trường | Kiểu dữ liệu | Mô tả |
-    | :------------ | :----------: | -----------------------------------------: |
+    | :------------: | :----------: | :-----------------------------------------: |
     | IDPhongBan | int | Khoá chính |
     | TenPhongBan | string | Tên phòng ban |
     | IDCongTy | int | Khoá ngoại tham chiếu từ bảng CongTy|
 
   - Quyen
     | Tên trường | Kiểu dữ liệu | Mô tả |
-    | :------------ | :----------: | -----------------------------------------: |
+    | :------------: | :----------: | :-----------------------------------------: |
     | IDQuyen | int | Khoá chính |
     | TenQuyen | string | Tên quyền, default(staff, company manager, department manager,... ) |
     | MoTaQuyen | string | Mô tả quyền, phân quyền người dùng đó thực hiện được những chức năng gì|
 
   - NguoiDung
     | Tên trường | Kiểu dữ liệu | Mô tả |
-    | :------------ | :----------: | -----------------------------------------: |
+    | :------------: | :----------: | :-----------------------------------------: |
     | IDNguoiDung | int | Khoá chính |
     | Username | string | Tên đăng nhập |
     | Password | string | Mật khẩu|
@@ -58,13 +58,13 @@
 
   - MaGiamGia
     | Tên trường | Kiểu dữ liệu | Mô tả |
-    | :------------ | :----------: | -----------------------------------------: |
+    | :------------: | :----------: | :-----------------------------------------: |
     | IDMaGiamGia | int | Khoá chính |
     | GiamDuocGia | double | Giá được giảm, áp dụng giảm theo phần trăm hoặc giảm bao nhiêu tiền cho 1 sản phẩm|
 
   - SanPham
     | Tên trường | Kiểu dữ liệu | Mô tả |
-    | :------------ | :----------: | -----------------------------------------: |
+    | :------------: | :----------: | -----------------------------------------: |
     | IDSanPham | int | Khoá chính |
     | TenSanPham | string | Tên sản phẩm |
     | Gia | string | Giá sản phẩm|
@@ -73,7 +73,7 @@
 
   - PhieuDeNghi
     | Tên trường | Kiểu dữ liệu | Mô tả |
-    | :------------ | :----------: | -----------------------------------------: |
+    | :------------:| :----------: | :-----------------------------------------: |
     | IDPhieuDeNghi | int | Khoá chính |
     | IDNhanVienDeNghi | int | Khoá ngoại tham chiếu từ bảng NguoiDung, nhân viên nào đề nghị mua món đồ |
     | IDSanPham | string | Khoá ngoại tham chiếu từ bảng SanPham, sản phẩm được nhân viên yêu cầu mua |
@@ -85,7 +85,7 @@
 
     - HoaDon
       | Tên trường | Kiểu dữ liệu | Mô tả |
-      | :------------ | :----------: | -----------------------------------------: |
+      | :------------: | :----------: | :-----------------------------------------: |
       | IDHoaDon | int | Khoá chính |
       | NgayLapHoaDon | datetime | Ngày lập hoá đơn|
       | TongTien | double | Tổng tiền mua sản phẩm từ công ty khác|
@@ -93,7 +93,7 @@
 
     - ChiTietHoaDon
       | Tên trường | Kiểu dữ liệu | Mô tả |
-      | :------------ | :----------: | -----------------------------------------: |
+      | :------------: | :----------: | :-----------------------------------------: |
       | IDHoaDon | int | Khoá ngoại tham chiếu từ bảng HoaDon |
       | IDSanPham | int | Khoá ngoại tham chiếu từ bảng SanPham|
       | SoLuong | int | Số lượng sản phẩm đã mua|
